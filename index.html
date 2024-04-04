@@ -1,17 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VITE APP / SCSS / GSAP / TAILWIND</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1 className="text-3xl font-bold underline">
-       FUN ANIMATION TEMPLATE
-      </h1>  
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITE APP / SCSS / GSAP / TAILWIND</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="w-full relative h-screen bg-[#F4F4F4] overflow-hidden">
+      <div class="flex flex-col items-center relative">
+        <div class="flex items-center">
+          <h1 class="text text-[#E8E8E8] text-[500px]">N</h1>
+          <h1 class="text text-[#E8E8E8] text-[500px]">I</h1>
+          <h1 class="text text-[#E8E8E8] text-[500px]">K</h1>
+          <h1 class="text text-[#E8E8E8] text-[500px]">E</h1>
+        </div>
+        <img src="/shadow.svg" alt="shadow" class="" />
+        <h2 class="text-7xl font-light absolute left-6 top-1/2 -translate-y-1/2">
+          Just <br>
+          Do <br>
+          It
+        </h2>
+      </div>
+      <div
+        class="absolute flex justify-center items-center w-full h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="shoes flex flex-col justify-start items-center w-full h-screen">
+          <div class="flex items-center justify-center w-full h-full pb-60 shrink-0">
+            <img src="/img-1.svg" alt="Nike Air Force" class="" />
+          </div>
+          <div class="flex items-center justify-center w-full h-full pb-60 shrink-0">
+            <img src="/img-2.svg" alt="Nike Air Monarch" class="" />
+          </div>
+          <div class="flex items-center justify-center w-full h-full pb-60 shrink-0">
+            <img src="/img-3.svg" alt="Nike Air Max 720" class="" />
+          </div>
+          <div class="flex items-center justify-center w-full h-full pb-60 shrink-0">
+            <img src="/img-4.svg" alt="Nike Air Max 90" class="" />
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-10 w-full flex items-center justify-center gap-6">
+        <div data-index="0"
+          class="item z-20 cursor-pointer hover:w-80 transition-[width] duration-300 flex flex-col items-center pb-8 bg-white rounded-3xl w-60">
+          <img src="/img-1.svg" alt="Nike Air Force" class="w-40 rotate-[25deg]" />
+          <span class="text-center text-2xl">Nike Air Force</span>
+        </div>
+        <div data-index="1"
+          class="item z-20 cursor-pointer hover:w-80 transition-[width] duration-300 flex flex-col items-center pb-8 bg-white rounded-3xl w-60">
+          <img src="/img-2.svg" alt="Nike Air Monarch" class="w-40 rotate-[25deg]" />
+          <span class="text-center text-2xl">Nike Air Monarch</span>
+        </div>
+        <div data-index="2"
+          class="item z-20 cursor-pointer hover:w-80 transition-[width] duration-300 flex flex-col items-center pb-8 bg-white rounded-3xl w-60">
+          <img src="/img-3.svg" alt="Nike Air Max 720" class="w-40 rotate-[25deg]" />
+          <span class="text-center text-2xl">Nike Air Max 720</span>
+        </div>
+        <div data-index="3"
+          class="item z-20 cursor-pointer hover:w-80 transition-[width] duration-300 flex flex-col items-center pb-8 bg-white rounded-3xl w-60">
+          <img src="/img-4.svg" alt="Nike Air Max 90" class="w-40 rotate-[25deg]" />
+          <span class="text-center text-2xl">Nike Air Max 90</span>
+        </div>
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="absolute flex items-center justify-between w-full top-0 py-2 px-6">
+      <img src="/nike.svg" alt="Nike" class="w-20" />
+      <div class="flex items-center justify-center gap-3">
+        <a class="underline underline-offset-4" href="https://x.com/ln_dev7">Code by LN</a>
+        <span>-</span>
+        <a class="underline underline-offset-4" href="https://github.com/ln-dev7/3D-slider-Nike-Freebie">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
